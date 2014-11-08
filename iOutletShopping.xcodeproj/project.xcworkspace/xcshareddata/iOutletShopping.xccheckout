@@ -10,14 +10,14 @@
 	<string>iOutletShopping</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>DA30C25CF4114EDA576EF24D5E03F2DA35FA1478</key>
+		<key>F7708631A6C890CD641F940AB6F5FD7AE95EAE6E</key>
 		<string>https://github.com/jiaxiaoru/iOutletShopping.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>iOutletShopping.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>DA30C25CF4114EDA576EF24D5E03F2DA35FA1478</key>
+		<key>F7708631A6C890CD641F940AB6F5FD7AE95EAE6E</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>DA30C25CF4114EDA576EF24D5E03F2DA35FA1478</string>
+	<string>F7708631A6C890CD641F940AB6F5FD7AE95EAE6E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>DA30C25CF4114EDA576EF24D5E03F2DA35FA1478</string>
+			<string>F7708631A6C890CD641F940AB6F5FD7AE95EAE6E</string>
 			<key>IDESourceControlWCCName</key>
 			<string>iOutletShopping</string>
 		</dict>
