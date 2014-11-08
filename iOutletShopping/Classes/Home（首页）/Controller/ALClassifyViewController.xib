@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ALClassifyViewController">
+            <connections>
+                <outlet property="collectionView" destination="DHW-ne-P4r" id="sO9-jW-dAl"/>
+                <outlet property="searchBar" destination="S6Y-Qg-Z8H" id="Orf-f9-hjf"/>
+                <outlet property="tableView" destination="aOA-jC-Wfl" id="m1f-9L-wKY"/>
+                <outlet property="view" destination="iN0-l3-epB" id="cyE-bK-TWR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="edB-PZ-vsl">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                    <color key="backgroundColor" red="0.26274511218070984" green="0.26274511218070984" blue="0.26274511218070984" alpha="1" colorSpace="deviceRGB"/>
+                </imageView>
+                <searchBar contentMode="redraw" fixedFrame="YES" placeholder="搜索你喜欢的商品" translatesAutoresizingMaskIntoConstraints="NO" id="S6Y-Qg-Z8H">
+                    <rect key="frame" x="80" y="15" width="240" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="nf3-hg-SQw"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="aOA-jC-Wfl">
+                    <rect key="frame" x="0.0" y="64" width="70" height="508"/>
+                    <color key="backgroundColor" red="0.47058826679999999" green="0.47058826679999999" blue="0.47058826679999999" alpha="1" colorSpace="deviceRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="NuD-gp-n2d"/>
+                        <outlet property="delegate" destination="-1" id="emt-de-6df"/>
+                    </connections>
+                </tableView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DHW-ne-P4r">
+                    <rect key="frame" x="70" y="64" width="250" height="508"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wIL-3e-i5C">
+                        <size key="itemSize" width="70" height="70"/>
+                        <size key="headerReferenceSize" width="230" height="30"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="eL4-wf-EeO"/>
+                        <outlet property="delegate" destination="-1" id="2l1-AE-l4h"/>
+                    </connections>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bf-zz-D1C">
+                    <rect key="frame" x="0.0" y="8" width="79" height="52"/>
+                    <state key="normal" title="类别" image="rightArrow">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="popToLastUI:" destination="-1" eventType="touchUpInside" id="tkK-y2-275"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="rightArrow" width="42" height="52"/>
+    </resources>
+</document>

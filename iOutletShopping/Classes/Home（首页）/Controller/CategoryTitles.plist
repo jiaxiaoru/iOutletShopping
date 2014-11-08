@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>imageName</key>
+		<string>icon_rightarrow</string>
+		<key>title</key>
+		<string>女装</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>icon_rightarrow</string>
+		<key>title</key>
+		<string>男装</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>icon_rightarrow</string>
+		<key>title</key>
+		<string>运动</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>icon_rightarrow</string>
+		<key>title</key>
+		<string>箱包</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>icon_rightarrow</string>
+		<key>title</key>
+		<string>内衣</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>icon_rightarrow</string>
+		<key>title</key>
+		<string>美妆</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>icon_rightarrow</string>
+		<key>title</key>
+		<string>婴童</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>icon_rightarrow</string>
+		<key>title</key>
+		<string>家居</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>icon_rightarrow</string>
+		<key>title</key>
+		<string>配饰</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>icon_rightarrow</string>
+		<key>title</key>
+		<string>名品</string>
+	</dict>
+</array>
+</plist>
