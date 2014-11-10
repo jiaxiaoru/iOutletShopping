@@ -11,7 +11,7 @@
 #import "ALClassifyViewController.h"
 #import "PPRevealSideViewController.h"
 static ALTabBarController * _sharedInstance;
-const NSInteger kBtnTotalNumber = 5;
+const NSInteger kBtnTotalNumber = 4;
 @interface ALTabBarController ()
 {
     ALTabBarButton *_selectedBtn;

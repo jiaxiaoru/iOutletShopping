@@ -12,12 +12,14 @@
 #import "ALShoppingCarItem.h"
 #import "ALGoPayViewController.h"
 #import "ALEmptyShoppingCarViewController.h"
+#import "ALTabBarController.h"
 
 @interface ALShoppingCarViewController ()<ALGoPayViewControllerDelegate,ALShoppingCarTableViewControllerDelegate>
 {
     ALGoPayViewController *_goPayView;
     ALShoppingCarTableViewController *_tableViewController;
     ALEmptyShoppingCarViewController *_emptyView;
+    ALTabBarController *_tabBar;
 }
 @end
 @implementation ALShoppingCarViewController
@@ -25,8 +27,12 @@
 #pragma mark - 初始化
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _tabBar = [ALTabBarController sharedInstance];
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
     [self setUpUI];
-    
 }
 //UI布局
 -(void)setUpUI
@@ -49,7 +55,10 @@
         _tableViewController  = [[ALShoppingCarTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
         
         //这句话必须放在调用hasdata之前，因为下面这句话调用了viewdidload
-        _tableViewController.view.frame = self.view.frame;
+        CGRect frame = self.view.frame;
+        frame.origin.y = 64;
+        _tableViewController.view.frame = frame;
+       
     }
     BOOL hasData = _tableViewController.hasData;
     
@@ -99,12 +108,15 @@
     }
    
     self.navigationItem.rightBarButtonItems = items;
+    
+    [_tabBar rewriteTitle];
 
 }
 #pragma mark - 添加tableview视图
 -(void)addTableView
 {
     _tableViewController.delegate = self;
+    _tableViewController.edit = NO;
     [self addChildViewController:_tableViewController];
     [self.view addSubview:_tableViewController.view];
 }
@@ -112,7 +124,8 @@
 -(void)addPayOffBtn
 {
     _goPayView = [[ALGoPayViewController alloc] init];
-    _goPayView.view.frame = CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-50, [[UIScreen mainScreen] bounds].size.width, 50);
+    _goPayView.view.frame = CGRectMake(0, kScreenHeight-50-48, kScreenWidth, 50);
+    _goPayView.type = ALGoPayViewDefaultType;
     _goPayView.delegate = self;
     [self.view addSubview:_goPayView.view];
 
@@ -137,7 +150,7 @@
     {
         ALLog(@"点击了去结算");
         //2.1 跳转到去结算UI
-        //[ALJumpToAnotherUI jumpToAnotherUI:@"去结算页面" withNavCtrl:self.navigationController];
+        [ALJumpToAnotherUI jumpToAnotherUI:@"ALCommitOrderViewController" withNavCtrl:self.navigationController];
     }
     //3. 点击了删除
     else if(tag == 3)
@@ -164,9 +177,9 @@
 -(void)deleteBtnClicked:(UIButton *)btn
 {
     NSInteger tag = btn.tag;
-    //1. 修改去结算视图:tag->0 删除按钮点击 tag->1 完成按钮点击
+    //1. 修改去结算视图:tag->0 nav上得删除按钮点击 tag->1 完成按钮点击
     _goPayView.deleteBtnHide = tag;
-    //tag->0 删除按钮点击
+    //tag->0 nav上得删除按钮点击
     if (tag == 0) {
         ALLog(@"trash button clicked");
         //2. 修改nav的右边按钮
@@ -177,6 +190,7 @@
     }
     //tag==1 完成按钮点击
     else{
+        
         [self addNavRightItems:YES];
         _tableViewController.edit = NO;
         //完成后可能删除了某些商品，需要刷新去结算的总金额
@@ -188,7 +202,7 @@
 #pragma mark - 修改nav的右按钮
 -(void)modifyNavForDeleteView
 {
-    UIButton *completeBtn = [[UIButton alloc] initWithFrame:CGRectMake(260, 10, 44, 24)];
+    UIButton *completeBtn = [[UIButton alloc] initWithFrame:CGRectMake(kScreenWidth-64, 10, 44, 24)];
     completeBtn.tag = 1;
     completeBtn.titleLabel.font = [UIFont systemFontOfSize:15];
     [completeBtn setTitle:@"完成" forState:UIControlStateNormal];
@@ -198,7 +212,8 @@
     self.navigationItem.rightBarButtonItems = nil;
     UIBarButtonItem *completeBtnItem = [[UIBarButtonItem alloc] initWithCustomView:completeBtn];
     self.navigationItem.rightBarButtonItem =completeBtnItem;
-    
+    //让修改的navitem即时显示
+    [_tabBar rewriteTitle];
 }
 
 @end

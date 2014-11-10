@@ -20,8 +20,6 @@
 {
     NSMutableArray *_titleArray;
 }
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @end
@@ -43,32 +41,32 @@
                                                                     NSForegroundColorAttributeName:[UIColor whiteColor]
                                                                     }forState:UIControlStateNormal];
 
-    [self setupUI];
+//    [self setupUI];
 
 }
 
-- (void)setupUI
-{
-    _titleArray = [NSMutableArray array];
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"CategoryTitles" ofType:@"plist"];
-    NSArray *titleContents = [NSArray arrayWithContentsOfFile:path];
-    for(NSDictionary *tempDic in titleContents)
-    {
-        ALCategoryTitleItem *item = [ALCategoryTitleItem categoryTitleItemWithDic:tempDic];
-        [_titleArray addObject:item];
-    }
-    
-    
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:kCollectionId];
-    self.collectionView.backgroundColor = [UIColor whiteColor];
-    
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kTableViewId];
-    
-    
-    UINib *headerNib = [UINib nibWithNibName:@"ALCollectionReusableView" bundle:nil];
-    
-    [self.collectionView registerNib:headerNib forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kReuseID];
-}
+//- (void)setupUI
+//{
+//    _titleArray = [NSMutableArray array];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"CategoryTitles" ofType:@"plist"];
+//    NSArray *titleContents = [NSArray arrayWithContentsOfFile:path];
+//    for(NSDictionary *tempDic in titleContents)
+//    {
+//        ALCategoryTitleItem *item = [ALCategoryTitleItem categoryTitleItemWithDic:tempDic];
+//        [_titleArray addObject:item];
+//    }
+//    
+//    
+//    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:kCollectionId];
+//    self.collectionView.backgroundColor = [UIColor whiteColor];
+//    
+//    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kTableViewId];
+//    
+//    
+//    UINib *headerNib = [UINib nibWithNibName:@"ALCollectionReusableView" bundle:nil];
+//    
+//    [self.collectionView registerNib:headerNib forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kReuseID];
+//}
 
 #pragma mark - 去除搜索框背景色
 - (UIImage *)imageWithColor:(UIColor *)color

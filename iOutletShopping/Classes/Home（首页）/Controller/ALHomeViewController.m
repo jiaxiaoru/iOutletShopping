@@ -14,7 +14,6 @@
 #import "ALClassifyViewController.h"
 #import "PPRevealSideViewController.h"
 #import "WebViewJavascriptBridge.h"
-//THIS IS A TEST
 @interface ALHomeViewController ()<ALDropDownDelegate,UIWebViewDelegate>
 {
     ALDropDown *_dropDown;

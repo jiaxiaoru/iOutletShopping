@@ -24,7 +24,7 @@
         <!--购物车-->
         <scene sceneID="ONv-cf-oF4">
             <objects>
-                <viewController id="0DY-Al-Qld" customClass="ALShoppingViewController" sceneMemberID="viewController">
+                <viewController id="0DY-Al-Qld" customClass="ALShoppingCarViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jKP-xV-fZb"/>
                         <viewControllerLayoutGuide type="bottom" id="7CT-JG-faF"/>
@@ -180,7 +180,7 @@
                         <viewControllerLayoutGuide type="bottom" id="3ON-cq-QxF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="G3P-EA-02D">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -241,7 +241,6 @@
                     <connections>
                         <segue destination="TZ0-sf-6kt" kind="relationship" relationship="viewControllers" id="iUL-xf-hBt"/>
                         <segue destination="YWW-gr-UBZ" kind="relationship" relationship="viewControllers" id="fvv-yu-8KE"/>
-                        <segue destination="aqh-fc-kcP" kind="relationship" relationship="viewControllers" id="PcC-4H-Vnq"/>
                         <segue destination="0DY-Al-Qld" kind="relationship" relationship="viewControllers" id="8gn-Rf-4te"/>
                         <segue destination="m9b-hm-GVi" kind="relationship" relationship="viewControllers" id="k5r-cW-2wy"/>
                     </connections>

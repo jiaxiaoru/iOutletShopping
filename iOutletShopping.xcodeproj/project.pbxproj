@@ -19,6 +19,8 @@
 		452C265619D9576300E84356 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 452C264E19D9576300E84356 /* FMDatabasePool.m */; };
 		452C265719D9576300E84356 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 452C265019D9576300E84356 /* FMDatabaseQueue.m */; };
 		452C265819D9576300E84356 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 452C265319D9576300E84356 /* FMResultSet.m */; };
+		452CE0BB1A10575D007375EB /* ALCommitOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452CE0BA1A10575D007375EB /* ALCommitOrderViewController.m */; };
+		452CE0BE1A1057E1007375EB /* ALCommitOrderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452CE0BD1A1057E1007375EB /* ALCommitOrderTableViewController.m */; };
 		4532052F19CFCA590070DA51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4532052819CFCA590070DA51 /* AppDelegate.m */; };
 		4532053019CFCA590070DA51 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4532052919CFCA590070DA51 /* Info.plist */; };
 		4532053119CFCA590070DA51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4532052A19CFCA590070DA51 /* main.m */; };
@@ -118,6 +120,10 @@
 		452C265119D9576300E84356 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
 		452C265219D9576300E84356 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		452C265319D9576300E84356 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		452CE0B91A10575D007375EB /* ALCommitOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALCommitOrderViewController.h; sourceTree = "<group>"; };
+		452CE0BA1A10575D007375EB /* ALCommitOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALCommitOrderViewController.m; sourceTree = "<group>"; };
+		452CE0BC1A1057E1007375EB /* ALCommitOrderTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALCommitOrderTableViewController.h; sourceTree = "<group>"; };
+		452CE0BD1A1057E1007375EB /* ALCommitOrderTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALCommitOrderTableViewController.m; sourceTree = "<group>"; };
 		4532052719CFCA590070DA51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4532052819CFCA590070DA51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4532052919CFCA590070DA51 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -486,6 +492,10 @@
 				45DBFEA41A0A16A900696CCB /* ALEmptyShoppingCarViewController.h */,
 				45DBFEA51A0A16A900696CCB /* ALEmptyShoppingCarViewController.m */,
 				45DBFEA61A0A16A900696CCB /* ALEmptyShoppingCarViewController.xib */,
+				452CE0B91A10575D007375EB /* ALCommitOrderViewController.h */,
+				452CE0BA1A10575D007375EB /* ALCommitOrderViewController.m */,
+				452CE0BC1A1057E1007375EB /* ALCommitOrderTableViewController.h */,
+				452CE0BD1A1057E1007375EB /* ALCommitOrderTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -806,6 +816,7 @@
 			files = (
 				45CABF2019D41A8B001CAB1F /* ALHomeViewController.m in Sources */,
 				459D8E171A0E062900AD9FD8 /* WebViewJavascriptBridge.m in Sources */,
+				452CE0BE1A1057E1007375EB /* ALCommitOrderTableViewController.m in Sources */,
 				452C264019D939ED00E84356 /* ALSecurityViewController.m in Sources */,
 				452C264319D93A1500E84356 /* ALSecurityCell.m in Sources */,
 				459D8E0C1A0E00D500AD9FD8 /* ALLikeCollectionViewCell.m in Sources */,
@@ -813,6 +824,7 @@
 				459C081719EFA33800DB0EFD /* ALBarButtonItem.m in Sources */,
 				45EFA15219FF68A300456E33 /* ALMineCollectionItem.m in Sources */,
 				45863F5719D6A90B00B757C2 /* ALSettingItem.m in Sources */,
+				452CE0BB1A10575D007375EB /* ALCommitOrderViewController.m in Sources */,
 				452C265619D9576300E84356 /* FMDatabasePool.m in Sources */,
 				45AA731C19DA48D10075CEB9 /* ALSearchViewController.m in Sources */,
 				452C265719D9576300E84356 /* FMDatabaseQueue.m in Sources */,

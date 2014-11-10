@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum
+{
+    ALGoPayViewDefaultType,
+    ALGoPayViewDeleteType,
+    ALGoPayViewCommitType
+}ALGoPayViewType;
+
 //typedef void(^ALTotallyPrice)(NSString *totally);
 
 @class ALGoPayViewController;
@@ -27,8 +34,18 @@
 @interface ALGoPayViewController : UIViewController
 
 @property (nonatomic,weak) id <ALGoPayViewControllerDelegate> delegate;
+////yes：显示去结算的UI，隐藏删除和提交订单的UI no则反之
+//@property (nonatomic,assign) BOOL showGoPayView;
+//
+////yes：显示删除的UI，隐藏去结算和提交订单的UI no则反之
+//@property (nonatomic,assign) BOOL showDeleteView;
+//
+////yes：显示提交订单的UI，隐藏删除和去结算的UI no则反之
+//@property (nonatomic,assign) BOOL showCommitOrderView;
+
 //隐藏删除，显示去结算view
 @property (nonatomic,assign) BOOL deleteBtnHide;
+@property (assign,nonatomic) ALGoPayViewType type;
 /**
  *  设置总金额
  *

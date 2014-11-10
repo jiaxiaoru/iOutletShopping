@@ -14,4 +14,5 @@
 @property (nonatomic,strong) NSMutableArray *btnArray;
 + (id) sharedInstance;
 -(void)clicked:(ALTabBarButton *)button;
+-(void) rewriteTitle;
 @end
