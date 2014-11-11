@@ -6,7 +6,6 @@
 //  Copyright (c) 2014年 aolaigo. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 
 @interface ALCommitOrderTableViewController : UITableViewController
 

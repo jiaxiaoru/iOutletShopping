@@ -22,6 +22,7 @@
     self.tableView.backgroundColor = [UIColor whiteColor];
     self.tableView.sectionHeaderHeight = 20;
     self.tableView.sectionFooterHeight = 0.1;
+    [self.tableView setTranslatesAutoresizingMaskIntoConstraints:NO];
     
     //默认购物车有商品
     self.hasData = YES;

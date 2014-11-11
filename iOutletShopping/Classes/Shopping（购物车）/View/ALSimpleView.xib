@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ALSimpleView">
+            <connections>
+                <outlet property="button" destination="Gja-6X-baS" id="JIx-FJ-HJi"/>
+                <outlet property="titleLabel" destination="lpc-aF-zaA" id="0Ei-3W-7aJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发票信息" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpc-aF-zaA">
+                    <rect key="frame" x="20" y="4" width="68" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="68" id="yV0-le-Rzj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.26274511220000002" green="0.26274511220000002" blue="0.26274511220000002" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gja-6X-baS">
+                    <rect key="frame" x="285" y="4" width="20" height="20"/>
+                    <state key="normal" image="IDInfo">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lpc-aF-zaA" firstAttribute="bottom" secondItem="Gja-6X-baS" secondAttribute="bottom" id="5Dc-0g-mZz"/>
+                <constraint firstItem="lpc-aF-zaA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="74d-p2-cJX"/>
+                <constraint firstItem="Gja-6X-baS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="3" id="FBk-h8-gQF"/>
+                <constraint firstItem="lpc-aF-zaA" firstAttribute="centerY" secondItem="Gja-6X-baS" secondAttribute="centerY" id="GkI-WA-w2x"/>
+                <constraint firstAttribute="trailing" secondItem="Gja-6X-baS" secondAttribute="trailing" constant="15" id="YSp-52-BzX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="IDInfo" width="20" height="21"/>
+    </resources>
+</document>

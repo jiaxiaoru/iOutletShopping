@@ -47,7 +47,10 @@
 -(void)addTableView
 {
     _tableViewCtl = [[ALCommitOrderTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
-    _tableViewCtl.view.frame = self.view.frame;
+    CGRect frame = self.view.frame;
+    frame.size.height -= 49; //减去tab的高度
+    _tableViewCtl.view.frame = frame;
+
     [self addChildViewController:_tableViewCtl];
     [self.view addSubview:_tableViewCtl.view];
 }

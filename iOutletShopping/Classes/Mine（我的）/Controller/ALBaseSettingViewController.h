@@ -12,6 +12,7 @@
 #import "ALSettingArrowItem.h"
 #import "ALSettingSwitchItem.h"
 #import "ALSettingLabelItem.h"
+#import "ALSettingButtonItem.h"
 
 @interface ALBaseSettingViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 {

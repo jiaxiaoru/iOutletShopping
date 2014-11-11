@@ -11,12 +11,15 @@
 #import "ALSettingSwitchItem.h"
 #import "ALSettingArrowItem.h"
 #import "ALSettingLabelItem.h"
+#import "ALSettingButtonItem.h"
+
 const int ALCellMargin = 10;
 
 @interface ALSettingCell()
 {
     UIImageView *_arrow;
     UISwitch *_switch;
+    UIButton *_button;
     UILabel *_label;
     
 //    UIView *_divider;
@@ -35,7 +38,7 @@ const int ALCellMargin = 10;
     
     // 2.如果缓存池中没有，才需要传入一个标识创建新的Cell
     if (cell == nil) {
-        cell = [[ALSettingCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:ID];
+        cell = [[ALSettingCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
     }
     
     return cell;
@@ -111,11 +114,13 @@ const int ALCellMargin = 10;
     if ([item isKindOfClass:[ALSettingArrowItem class]]) {
         ALSettingArrowItem *arrowItem = (ALSettingArrowItem *)item;
         [self settingArrowWithImage:arrowItem.imageName];
-    } else if ([item isKindOfClass:[ALSettingSwitchItem class]]) {
+    } else if ([item isKindOfClass:[ALSettingButtonItem class]]){
+        [self settingButton];
+    }else if ([item isKindOfClass:[ALSettingSwitchItem class]]) {
         [self settingSwitch];
     } else if ([item isKindOfClass:[ALSettingLabelItem class]]) {
         [self settingLabel];
-    } else {
+    }else {
         // 什么也没有，清空右边显示的view
         self.accessoryView = nil;
         // 用默认的选中样式
@@ -212,4 +217,34 @@ const int ALCellMargin = 10;
     self.selectionStyle = UITableViewCellSelectionStyleDefault;
 }
 
+#pragma mark 设置右边的按钮
+-(void)settingButton
+{
+    ALSettingButtonItem *buttonItem = (ALSettingButtonItem *)_item;
+    
+    if (_button == nil) {
+        _button = [[UIButton alloc] initWithFrame:CGRectMake(kScreenWidth-40, 0, 30, 30)];
+        [_button setImage:[UIImage imageNamed:buttonItem.normalImageName] forState:UIControlStateNormal];
+        [_button setImage:[UIImage imageNamed:buttonItem.selectedImageName] forState:UIControlStateSelected];
+        
+        [_button addTarget:self action:@selector(buttonChange) forControlEvents:UIControlEventTouchUpInside];
+    }
+    
+    // 设置开关的状态
+    _button.selected = !buttonItem.off;
+    
+    // 右边显示开关
+    self.accessoryView = _button;
+    // 禁止选中
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+}
+
+#pragma mark 按钮状态改变
+-(void)buttonChange
+{
+    ALSettingButtonItem *buttonItem = (ALSettingButtonItem *)_item;
+    buttonItem.off = !_button.selected;
+    _button.selected = buttonItem.off;
+}
 @end

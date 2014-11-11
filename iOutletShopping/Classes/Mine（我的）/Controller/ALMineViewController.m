@@ -74,7 +74,7 @@ const float ORIGINAL_MAX_WIDTH = 640.0f;
     NSArray *tabTitles = [NSArray arrayWithObjects:@"我的订单",@"我的收藏",@"优惠券", nil];
     
     //2. 有多个标题创建多少个collectionView以展示不同的数据
-    int count = tabTitles.count;
+    NSUInteger count = tabTitles.count;
     _collectionViewArray = [NSMutableArray arrayWithCapacity:count+1];
     for (int  i = 0; i < count; i++) {
         UICollectionViewFlowLayout *flowLayout =[[UICollectionViewFlowLayout alloc]init];

@@ -84,6 +84,12 @@
 		45EFA14F19FF67C900456E33 /* ALMineCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45EFA14D19FF67C900456E33 /* ALMineCollectionViewCell.xib */; };
 		45EFA15219FF68A300456E33 /* ALMineCollectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EFA15119FF68A300456E33 /* ALMineCollectionItem.m */; };
 		45EFA15419FF6B1D00456E33 /* MineAllNames.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45EFA15319FF6B1D00456E33 /* MineAllNames.plist */; };
+		45F8B9C41A11AA8E0075ED6C /* ALSettingButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F8B9C31A11AA8E0075ED6C /* ALSettingButtonItem.m */; };
+		45F8B9CD1A11E0A90075ED6C /* ALCommitOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F8B9CB1A11E0A90075ED6C /* ALCommitOrderCell.m */; };
+		45F8B9CE1A11E0A90075ED6C /* ALCommitOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45F8B9CC1A11E0A90075ED6C /* ALCommitOrderCell.xib */; };
+		45F8B9D11A11EA1F0075ED6C /* ALCommitOrderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F8B9D01A11EA1F0075ED6C /* ALCommitOrderItem.m */; };
+		45F8B9D51A1208F20075ED6C /* ALSimpleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F8B9D31A1208F20075ED6C /* ALSimpleView.m */; };
+		45F8B9D61A1208F20075ED6C /* ALSimpleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45F8B9D41A1208F20075ED6C /* ALSimpleView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -238,6 +244,16 @@
 		45EFA15019FF68A300456E33 /* ALMineCollectionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALMineCollectionItem.h; sourceTree = "<group>"; };
 		45EFA15119FF68A300456E33 /* ALMineCollectionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALMineCollectionItem.m; sourceTree = "<group>"; };
 		45EFA15319FF6B1D00456E33 /* MineAllNames.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MineAllNames.plist; sourceTree = "<group>"; };
+		45F8B9C21A11AA8E0075ED6C /* ALSettingButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSettingButtonItem.h; sourceTree = "<group>"; };
+		45F8B9C31A11AA8E0075ED6C /* ALSettingButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSettingButtonItem.m; sourceTree = "<group>"; };
+		45F8B9CA1A11E0A90075ED6C /* ALCommitOrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALCommitOrderCell.h; sourceTree = "<group>"; };
+		45F8B9CB1A11E0A90075ED6C /* ALCommitOrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALCommitOrderCell.m; sourceTree = "<group>"; };
+		45F8B9CC1A11E0A90075ED6C /* ALCommitOrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALCommitOrderCell.xib; sourceTree = "<group>"; };
+		45F8B9CF1A11EA1F0075ED6C /* ALCommitOrderItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALCommitOrderItem.h; sourceTree = "<group>"; };
+		45F8B9D01A11EA1F0075ED6C /* ALCommitOrderItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALCommitOrderItem.m; sourceTree = "<group>"; };
+		45F8B9D21A1208F20075ED6C /* ALSimpleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSimpleView.h; sourceTree = "<group>"; };
+		45F8B9D31A1208F20075ED6C /* ALSimpleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSimpleView.m; sourceTree = "<group>"; };
+		45F8B9D41A1208F20075ED6C /* ALSimpleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALSimpleView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -412,6 +428,8 @@
 				45863F5C19D6A9AF00B757C2 /* ALSettingValueItem.m */,
 				45863F5E19D6A9E000B757C2 /* ALSettingSwitchItem.h */,
 				45863F5F19D6A9E000B757C2 /* ALSettingSwitchItem.m */,
+				45F8B9C21A11AA8E0075ED6C /* ALSettingButtonItem.h */,
+				45F8B9C31A11AA8E0075ED6C /* ALSettingButtonItem.m */,
 				45863F6419D6AAF000B757C2 /* ALSettingLabelItem.h */,
 				45863F6519D6AAF000B757C2 /* ALSettingLabelItem.m */,
 				45863F6119D6AA4900B757C2 /* ALSettingTool.h */,
@@ -505,6 +523,8 @@
 			children = (
 				45A350FE1A0373FA004AECCE /* ALShoppingCarItem.h */,
 				45A350FF1A0373FA004AECCE /* ALShoppingCarItem.m */,
+				45F8B9CF1A11EA1F0075ED6C /* ALCommitOrderItem.h */,
+				45F8B9D01A11EA1F0075ED6C /* ALCommitOrderItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -515,6 +535,12 @@
 				45CF8E7B19F899F300C1760C /* ALShoppingCarCell.h */,
 				45CF8E7C19F899F300C1760C /* ALShoppingCarCell.m */,
 				45CF8E7D19F899F300C1760C /* ALShoppingCarCell.xib */,
+				45F8B9CA1A11E0A90075ED6C /* ALCommitOrderCell.h */,
+				45F8B9CB1A11E0A90075ED6C /* ALCommitOrderCell.m */,
+				45F8B9CC1A11E0A90075ED6C /* ALCommitOrderCell.xib */,
+				45F8B9D21A1208F20075ED6C /* ALSimpleView.h */,
+				45F8B9D31A1208F20075ED6C /* ALSimpleView.m */,
+				45F8B9D41A1208F20075ED6C /* ALSimpleView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -785,11 +811,13 @@
 				452C263A19D9247B00E84356 /* ALLoginViewController.xib in Resources */,
 				4532053019CFCA590070DA51 /* Info.plist in Resources */,
 				458C811B19CBC49B00F345E0 /* Main.storyboard in Resources */,
+				45F8B9D61A1208F20075ED6C /* ALSimpleView.xib in Resources */,
 				45EFA15419FF6B1D00456E33 /* MineAllNames.plist in Resources */,
 				459D8E0D1A0E00D500AD9FD8 /* ALLikeCollectionViewCell.xib in Resources */,
 				459D8E161A0E062900AD9FD8 /* WebViewJavascriptBridge.js.txt in Resources */,
 				458C812019CBC49B00F345E0 /* LaunchScreen.xib in Resources */,
 				45CF8E7F19F899F300C1760C /* ALShoppingCarCell.xib in Resources */,
+				45F8B9CE1A11E0A90075ED6C /* ALCommitOrderCell.xib in Resources */,
 				459C081419EF92F200DB0EFD /* ALCollectionReusableView.xib in Resources */,
 				458C811D19CBC49B00F345E0 /* Images.xcassets in Resources */,
 				45AA734B19DA92D30075CEB9 /* CategoryTitles.plist in Resources */,
@@ -821,6 +849,7 @@
 				452C264319D93A1500E84356 /* ALSecurityCell.m in Sources */,
 				459D8E0C1A0E00D500AD9FD8 /* ALLikeCollectionViewCell.m in Sources */,
 				45A350FD1A03583D004AECCE /* ALMyOrderTableViewController.m in Sources */,
+				45F8B9D11A11EA1F0075ED6C /* ALCommitOrderItem.m in Sources */,
 				459C081719EFA33800DB0EFD /* ALBarButtonItem.m in Sources */,
 				45EFA15219FF68A300456E33 /* ALMineCollectionItem.m in Sources */,
 				45863F5719D6A90B00B757C2 /* ALSettingItem.m in Sources */,
@@ -852,11 +881,13 @@
 				4553E22C1A086AC9002D1FA5 /* ALGoPayViewController.m in Sources */,
 				459D8E1B1A0E065300AD9FD8 /* VPImageCropperViewController.m in Sources */,
 				45923D0519D56E37007DDC7A /* ALDropDown.m in Sources */,
+				45F8B9CD1A11E0A90075ED6C /* ALCommitOrderCell.m in Sources */,
 				459D8E111A0E060900AD9FD8 /* PPRevealSideViewController.m in Sources */,
 				45863F6619D6AAF000B757C2 /* ALSettingLabelItem.m in Sources */,
 				45CF8E7E19F899F300C1760C /* ALShoppingCarCell.m in Sources */,
 				45AA732A19DA4ABA0075CEB9 /* ALRushedCatchViewController.m in Sources */,
 				45CABF1719D41739001CAB1F /* ALNavigationController.m in Sources */,
+				45F8B9C41A11AA8E0075ED6C /* ALSettingButtonItem.m in Sources */,
 				452C265519D9576300E84356 /* FMDatabaseAdditions.m in Sources */,
 				45A350FA1A033F78004AECCE /* ALMyOrdersViewController.m in Sources */,
 				45AA732719DA4AA70075CEB9 /* ALNewDeliverViewController.m in Sources */,
@@ -870,6 +901,7 @@
 				45863F6019D6A9E000B757C2 /* ALSettingSwitchItem.m in Sources */,
 				45863F7219D6AF4800B757C2 /* ALSettingViewController.m in Sources */,
 				459C081319EF92F200DB0EFD /* ALCollectionHeaderView.m in Sources */,
+				45F8B9D51A1208F20075ED6C /* ALSimpleView.m in Sources */,
 				452C264619D93EFE00E84356 /* ALRemindViewController.m in Sources */,
 				45863F5119D6583600B757C2 /* JudgeLogin.m in Sources */,
 				45DBFEA71A0A16A900696CCB /* ALEmptyShoppingCarViewController.m in Sources */,
