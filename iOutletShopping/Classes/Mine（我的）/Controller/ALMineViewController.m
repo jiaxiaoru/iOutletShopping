@@ -62,7 +62,7 @@ const float ORIGINAL_MAX_WIDTH = 640.0f;
 #pragma mark - 添加我的订单/收藏/优惠券
 -(void)addMineCollectionView
 {
-    _slideSwitchView = [[ALSlideSwitchView alloc] initWithFrame:CGRectMake(0, 162, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-162)];
+    _slideSwitchView = [[ALSlideSwitchView alloc] initWithFrame:CGRectMake(0, 162, kScreenWidth, kScreenHeight-162)];
     _slideSwitchView.delegate = self;
     [self.view addSubview:_slideSwitchView];
     
@@ -74,7 +74,7 @@ const float ORIGINAL_MAX_WIDTH = 640.0f;
     NSArray *tabTitles = [NSArray arrayWithObjects:@"我的订单",@"我的收藏",@"优惠券", nil];
     
     //2. 有多个标题创建多少个collectionView以展示不同的数据
-    NSUInteger count = tabTitles.count;
+    int count = tabTitles.count;
     _collectionViewArray = [NSMutableArray arrayWithCapacity:count+1];
     for (int  i = 0; i < count; i++) {
         UICollectionViewFlowLayout *flowLayout =[[UICollectionViewFlowLayout alloc]init];
@@ -94,8 +94,10 @@ const float ORIGINAL_MAX_WIDTH = 640.0f;
 #pragma mark - collectionView自定义代理方法的实现
 -(void)mineCollectionViewController:(ALMineCollectionViewController *)controller jumpTo:(NSString *)className
 {
+    NSLog(@"className:%@",className);
     
     [ALJumpToAnotherUI jumpToAnotherUI:className withNavCtrl:self.navigationController];
+    
 }
 #pragma mark - 滑动tab视图代理方法
 

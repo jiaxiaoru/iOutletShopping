@@ -70,6 +70,13 @@
 		45AA733719DA8FD60075CEB9 /* ALClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AA733519DA8FD60075CEB9 /* ALClassifyViewController.m */; };
 		45AA734A19DA92D30075CEB9 /* ALCategoryTitleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AA734819DA92D30075CEB9 /* ALCategoryTitleItem.m */; };
 		45AA734B19DA92D30075CEB9 /* CategoryTitles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45AA734919DA92D30075CEB9 /* CategoryTitles.plist */; };
+		45C35E2D1A12FBA600DA369C /* ALBillInforViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C35E2B1A12FBA600DA369C /* ALBillInforViewController.m */; };
+		45C35E2E1A12FBA600DA369C /* ALBillInforViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45C35E2C1A12FBA600DA369C /* ALBillInforViewController.xib */; };
+		45C35E381A13326800DA369C /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C35E321A13326800DA369C /* UIView+ViewController.m */; };
+		45C35E391A13326800DA369C /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C35E341A13326800DA369C /* UIViewExt.m */; };
+		45C35E3A1A13326800DA369C /* ThemeLeftButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C35E371A13326800DA369C /* ThemeLeftButton.m */; };
+		45C35E3E1A1332A700DA369C /* ALLikeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45C35E3B1A1332A700DA369C /* ALLikeViewController.xib */; };
+		45C35E3F1A1332A700DA369C /* ALLikeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C35E3C1A1332A700DA369C /* ALLikeViewController.m */; };
 		45CABF1719D41739001CAB1F /* ALNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CABF1119D41739001CAB1F /* ALNavigationController.m */; };
 		45CABF1819D41739001CAB1F /* ALTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CABF1319D41739001CAB1F /* ALTabBarController.m */; };
 		45CABF1919D41739001CAB1F /* ALTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CABF1619D41739001CAB1F /* ALTabBarButton.m */; };
@@ -220,6 +227,18 @@
 		45AA734719DA92D30075CEB9 /* ALCategoryTitleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALCategoryTitleItem.h; path = ../Controller/ALCategoryTitleItem.h; sourceTree = "<group>"; };
 		45AA734819DA92D30075CEB9 /* ALCategoryTitleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALCategoryTitleItem.m; path = ../Controller/ALCategoryTitleItem.m; sourceTree = "<group>"; };
 		45AA734919DA92D30075CEB9 /* CategoryTitles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = CategoryTitles.plist; path = "Classes/Home（首页）/Controller/CategoryTitles.plist"; sourceTree = "<group>"; };
+		45C35E2A1A12FBA600DA369C /* ALBillInforViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALBillInforViewController.h; sourceTree = "<group>"; };
+		45C35E2B1A12FBA600DA369C /* ALBillInforViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALBillInforViewController.m; sourceTree = "<group>"; };
+		45C35E2C1A12FBA600DA369C /* ALBillInforViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBillInforViewController.xib; sourceTree = "<group>"; };
+		45C35E311A13326800DA369C /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
+		45C35E321A13326800DA369C /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
+		45C35E331A13326800DA369C /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		45C35E341A13326800DA369C /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		45C35E361A13326800DA369C /* ThemeLeftButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeLeftButton.h; sourceTree = "<group>"; };
+		45C35E371A13326800DA369C /* ThemeLeftButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeLeftButton.m; sourceTree = "<group>"; };
+		45C35E3B1A1332A700DA369C /* ALLikeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALLikeViewController.xib; sourceTree = "<group>"; };
+		45C35E3C1A1332A700DA369C /* ALLikeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALLikeViewController.m; sourceTree = "<group>"; };
+		45C35E3D1A1332A700DA369C /* ALLikeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALLikeViewController.h; sourceTree = "<group>"; };
 		45CABF1019D41739001CAB1F /* ALNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNavigationController.h; sourceTree = "<group>"; };
 		45CABF1119D41739001CAB1F /* ALNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALNavigationController.m; sourceTree = "<group>"; };
 		45CABF1219D41739001CAB1F /* ALTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTabBarController.h; sourceTree = "<group>"; };
@@ -285,6 +304,7 @@
 		452C264719D9576300E84356 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				45C35E2F1A13326800DA369C /* 自定义控件 */,
 				45AA732E19DA4CC30075CEB9 /* libsqlite3.dylib */,
 				452C264819D9576300E84356 /* fmdb */,
 			);
@@ -392,6 +412,9 @@
 		4532051F19CFCA590070DA51 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				45C35E3B1A1332A700DA369C /* ALLikeViewController.xib */,
+				45C35E3C1A1332A700DA369C /* ALLikeViewController.m */,
+				45C35E3D1A1332A700DA369C /* ALLikeViewController.h */,
 				45863F6719D6ABF700B757C2 /* ALBaseSettingViewController.h */,
 				45863F6819D6ABF700B757C2 /* ALBaseSettingViewController.m */,
 				45863F7019D6AF4800B757C2 /* ALSettingViewController.h */,
@@ -541,6 +564,9 @@
 				45F8B9D21A1208F20075ED6C /* ALSimpleView.h */,
 				45F8B9D31A1208F20075ED6C /* ALSimpleView.m */,
 				45F8B9D41A1208F20075ED6C /* ALSimpleView.xib */,
+				45C35E2A1A12FBA600DA369C /* ALBillInforViewController.h */,
+				45C35E2B1A12FBA600DA369C /* ALBillInforViewController.m */,
+				45C35E2C1A12FBA600DA369C /* ALBillInforViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -697,6 +723,35 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		45C35E2F1A13326800DA369C /* 自定义控件 */ = {
+			isa = PBXGroup;
+			children = (
+				45C35E301A13326800DA369C /* Tools */,
+				45C35E351A13326800DA369C /* 控件 */,
+			);
+			path = "自定义控件";
+			sourceTree = "<group>";
+		};
+		45C35E301A13326800DA369C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				45C35E311A13326800DA369C /* UIView+ViewController.h */,
+				45C35E321A13326800DA369C /* UIView+ViewController.m */,
+				45C35E331A13326800DA369C /* UIViewExt.h */,
+				45C35E341A13326800DA369C /* UIViewExt.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		45C35E351A13326800DA369C /* 控件 */ = {
+			isa = PBXGroup;
+			children = (
+				45C35E361A13326800DA369C /* ThemeLeftButton.h */,
+				45C35E371A13326800DA369C /* ThemeLeftButton.m */,
+			);
+			path = "控件";
+			sourceTree = "<group>";
+		};
 		45CABF0F19D41739001CAB1F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -823,6 +878,8 @@
 				45AA734B19DA92D30075CEB9 /* CategoryTitles.plist in Resources */,
 				45EFA14F19FF67C900456E33 /* ALMineCollectionViewCell.xib in Resources */,
 				4553E22D1A086AC9002D1FA5 /* ALGoPayViewController.xib in Resources */,
+				45C35E3E1A1332A700DA369C /* ALLikeViewController.xib in Resources */,
+				45C35E2E1A12FBA600DA369C /* ALBillInforViewController.xib in Resources */,
 				4502677E19EF6F1300F22A80 /* ALClassifyViewController.xib in Resources */,
 				45DBFEA81A0A16A900696CCB /* ALEmptyShoppingCarViewController.xib in Resources */,
 			);
@@ -868,7 +925,9 @@
 				45CABF1919D41739001CAB1F /* ALTabBarButton.m in Sources */,
 				45863F6C19D6ACB700B757C2 /* ALSettingGroup.m in Sources */,
 				452C265819D9576300E84356 /* FMResultSet.m in Sources */,
+				45C35E3A1A13326800DA369C /* ThemeLeftButton.m in Sources */,
 				456CB01019D7B574002F4628 /* UILabel+ALLabel.m in Sources */,
+				45C35E381A13326800DA369C /* UIView+ViewController.m in Sources */,
 				452C263919D9247B00E84356 /* ALLoginViewController.m in Sources */,
 				45863F5A19D6A95500B757C2 /* ALSettingArrowItem.m in Sources */,
 				452C265419D9576300E84356 /* FMDatabase.m in Sources */,
@@ -879,6 +938,7 @@
 				45863F6F19D6ADB800B757C2 /* ALSettingCell.m in Sources */,
 				4532052F19CFCA590070DA51 /* AppDelegate.m in Sources */,
 				4553E22C1A086AC9002D1FA5 /* ALGoPayViewController.m in Sources */,
+				45C35E391A13326800DA369C /* UIViewExt.m in Sources */,
 				459D8E1B1A0E065300AD9FD8 /* VPImageCropperViewController.m in Sources */,
 				45923D0519D56E37007DDC7A /* ALDropDown.m in Sources */,
 				45F8B9CD1A11E0A90075ED6C /* ALCommitOrderCell.m in Sources */,
@@ -904,8 +964,10 @@
 				45F8B9D51A1208F20075ED6C /* ALSimpleView.m in Sources */,
 				452C264619D93EFE00E84356 /* ALRemindViewController.m in Sources */,
 				45863F5119D6583600B757C2 /* JudgeLogin.m in Sources */,
+				45C35E3F1A1332A700DA369C /* ALLikeViewController.m in Sources */,
 				45DBFEA71A0A16A900696CCB /* ALEmptyShoppingCarViewController.m in Sources */,
 				4599303A19EE092C002920DD /* ALSaveArrayData.m in Sources */,
+				45C35E2D1A12FBA600DA369C /* ALBillInforViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,15 +6,96 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ALLikeCollectionViewCell">
             <rect key="frame" x="0.0" y="0.0" width="210" height="250"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="210" height="250"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goodsImage" translatesAutoresizingMaskIntoConstraints="NO" id="Oih-yC-RZX">
+                        <rect key="frame" x="0.0" y="0.0" width="210" height="187"/>
+                        <color key="backgroundColor" red="0.93340105006372798" green="1" blue="0.48325816882370498" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="210" id="Rvg-tr-fvK"/>
+                            <constraint firstAttribute="height" constant="187" id="yUt-hw-3uq"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Five Plus2014新女秋装气质棉..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQJ-jJ-vYD">
+                        <rect key="frame" x="0.0" y="222" width="210" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="¥1990.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCS-Y6-kas">
+                        <rect key="frame" x="0.0" y="190" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¥3600.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtv-Tl-lhf">
+                        <rect key="frame" x="86" y="190" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62W-Pf-Vi5">
+                        <rect key="frame" x="180" y="190" width="30" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Fr3-HM-cEP"/>
+                            <constraint firstAttribute="width" constant="30" id="HiP-Lm-tYp"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="blackheart">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" alpha="0.49999999999999961" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UjV-Nu-2WY">
+                        <rect key="frame" x="8" y="218" width="194" height="1"/>
+                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="H2K-sG-crC"/>
+                        </constraints>
+                    </imageView>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucT-Qh-yQX">
+                        <rect key="frame" x="8" y="8" width="20" height="20"/>
+                        <state key="normal" image="selected">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="_selectedAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="itq-gC-HAK"/>
+                        </connections>
+                    </button>
+                </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <size key="customSize" width="210" height="250"/>
-            <point key="canvasLocation" x="152" y="246"/>
+            <constraints>
+                <constraint firstItem="Oih-yC-RZX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1bu-na-P0l"/>
+                <constraint firstItem="ZCS-Y6-kas" firstAttribute="top" secondItem="Oih-yC-RZX" secondAttribute="bottom" constant="3" id="1t0-zq-yHT"/>
+                <constraint firstItem="ZCS-Y6-kas" firstAttribute="top" secondItem="Oih-yC-RZX" secondAttribute="bottom" constant="3" id="3Kf-s7-94b"/>
+                <constraint firstItem="CQJ-jJ-vYD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5tk-05-RvX"/>
+                <constraint firstAttribute="trailing" secondItem="CQJ-jJ-vYD" secondAttribute="trailing" id="8UI-vx-dkq"/>
+                <constraint firstAttribute="trailing" secondItem="Oih-yC-RZX" secondAttribute="trailing" id="9xG-lk-TwL"/>
+                <constraint firstAttribute="bottom" secondItem="CQJ-jJ-vYD" secondAttribute="bottom" constant="7" id="K1M-yk-Vls"/>
+                <constraint firstItem="62W-Pf-Vi5" firstAttribute="top" secondItem="Oih-yC-RZX" secondAttribute="bottom" constant="3" id="c2O-je-1Kx"/>
+                <constraint firstAttribute="trailing" secondItem="UjV-Nu-2WY" secondAttribute="trailing" constant="8" id="t4Q-Dz-OKw"/>
+                <constraint firstItem="ZCS-Y6-kas" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vBY-iQ-uL6"/>
+                <constraint firstItem="UjV-Nu-2WY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="x8I-1I-efC"/>
+                <constraint firstAttribute="trailing" secondItem="62W-Pf-Vi5" secondAttribute="trailing" id="ys4-1N-40a"/>
+                <constraint firstItem="Oih-yC-RZX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zhH-Ys-Qv8"/>
+            </constraints>
+            <size key="customSize" width="210" height="251"/>
+            <connections>
+                <outlet property="_goodsDetailLabel" destination="ZCS-Y6-kas" id="oEI-Df-kRP"/>
+                <outlet property="_goodsImageView" destination="Oih-yC-RZX" id="Ju8-hU-cch"/>
+                <outlet property="_orignalPriceLabel" destination="wtv-Tl-lhf" id="2sF-fv-oGp"/>
+                <outlet property="_priceLabel" destination="ZCS-Y6-kas" id="dRy-Wi-3Xs"/>
+                <outlet property="_selectedButton" destination="ucT-Qh-yQX" id="x7e-6D-qsM"/>
+            </connections>
+            <point key="canvasLocation" x="152" y="251"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="blackheart" width="60" height="44"/>
+        <image name="goodsImage" width="380" height="342"/>
+        <image name="selected" width="54" height="52"/>
+    </resources>
 </document>

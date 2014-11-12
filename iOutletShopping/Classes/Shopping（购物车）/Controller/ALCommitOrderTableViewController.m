@@ -169,28 +169,36 @@
     return group.header;
 }
 
+#pragma mark 返回每一组的headerview
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     if (section == 3) {
-        ALSimpleView *headerView = [[ALSimpleView alloc] init];
-        headerView.view.backgroundColor = self.tableView.backgroundColor;
-        headerView.view.frame = CGRectMake(0, 0, kScreenWidth, 30);
-        headerView.titleLabel.text = @"发票信息";
-        [headerView.button addTarget:self action:@selector(billBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
-        [headerView.button setImage:[UIImage imageNamed:@"nohookselected"] forState:UIControlStateNormal];
-        [headerView.button setImage:[UIImage imageNamed:@"selectedhook"] forState:UIControlStateSelected];
-        
-        return headerView.view;
+        //添加发票信息的headerview
+        return [self addHeaderView];
     }
     return nil;
 }
 
+#pragma mark - 添加发票信息的头
+-(UIView *)addHeaderView
+{
+    ALSimpleView *headerView = [[ALSimpleView alloc] init];
+    headerView.view.backgroundColor = self.tableView.backgroundColor;
+    headerView.view.frame = CGRectMake(0, 0, kScreenWidth, 30);
+    headerView.titleLabel.text = @"发票信息";
+    [headerView.button addTarget:self action:@selector(billBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [headerView.button setImage:[UIImage imageNamed:@"nohookselected"] forState:UIControlStateNormal];
+    [headerView.button setImage:[UIImage imageNamed:@"selectedhook"] forState:UIControlStateSelected];
+    return headerView.view;
+}
+
+#pragma mark - 显示发票信息
 -(void)billBtnClicked:(UIButton *)btn
 {
     btn.selected = !btn.selected;
     if (btn.selected) {
         ALSettingGroup *group = _allGroups[3];
-        group.items = @[]
+//        group.items = @[]
     }
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section

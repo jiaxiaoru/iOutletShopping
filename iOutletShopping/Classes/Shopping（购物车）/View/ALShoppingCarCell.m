@@ -54,6 +54,7 @@
     
     return cell;
 }
+
 #pragma mark - 模型赋值View
 
 -(void)setShoppingCarItem:(ALShoppingCarItem *)shoppingCarItem

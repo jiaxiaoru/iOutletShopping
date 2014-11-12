@@ -52,6 +52,10 @@
 			<string>IDInfo</string>
 			<key>title</key>
 			<string>收藏商品</string>
+			<key>className</key>
+			<string>ALLikeViewController</string>
+			<key>number</key>
+			<string>4</string>
 		</dict>
 	</array>
 	<key>优惠券</key>
